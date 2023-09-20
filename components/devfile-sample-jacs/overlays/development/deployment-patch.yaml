@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jacs
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0046-tenant/ci10t-776-0046-app/devfile-sample-jacs@sha256:7a309a46e9eaa9d5dbbd49cf091040d7227ec2a12e030cf539ede4fdf729ea3b
+        name: my-nodejs
+        resources: {}
+status: {}
